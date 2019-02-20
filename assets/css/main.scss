@@ -1,0 +1,8 @@
+@import 'tailwind';
+@import '../fonts/inter.scss';
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
