@@ -1,16 +1,18 @@
 @import 'tailwind';
-@import 'inter.scss';
+@import 'variables';
+@import 'inter';
+@import 'scrollbar';
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: #22292F;
+  background: $black;
   color: white;
 
   a {
     color: white;
 
     &:hover {
-      color: rgb(255, 205, 66);
+      color: $yellow;
     }
-  } 
+  }
 }
