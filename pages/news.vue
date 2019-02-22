@@ -1,10 +1,7 @@
 <template>
-  <section>
-    <h3>
-      I'm keeping myself up-to-date with the following websites:
-    </h3>
-    <ul>
-      <li v-for="n in news" :key="n.name">
+  <section class="container mx-auto">
+    <ul class="flex flex-col items-center justify-center list-reset">
+      <li v-for="n in news" :key="n.name" class="font-black text-xl md:text-5xl my-1">
         <a :href="n.href" target="_blank">{{ n.name }}</a>
       </li>
     </ul>
@@ -18,10 +15,13 @@ export default {
       news: [
         { href: 'https://css-tricks.com', name: 'CSS-Tricks' },
         { href: 'https://increment.com/development', name: 'Increment' },
-        { href: 'https://www.pages.xyz', name: 'Pages' },
+        { href: 'https://www.pages.xyz', name: 'pages.xyz' },
         { href: 'https://news.ycombinator.com', name: 'Hacker News' },
         { href: 'https://techcrunch.com', name: 'Tech Crunch' },
-        { href: 'https://techcrunch.com', name: 'Product Hunt' }
+        { href: 'https://techcrunch.com', name: 'Product Hunt' },
+        { href: 'https://www.techmeme.com', name: 'Techmeme' },
+        { href: 'https://pageflows.com/pages', name: 'Page Flows' },
+        { href: 'https://www.evernote.design', name: 'Evernote Design' }
       ]
     }
   }

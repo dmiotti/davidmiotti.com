@@ -1,8 +1,18 @@
 <template>
   <div>
+    <fixed-header />
     <nuxt />
   </div>
 </template>
+
+<script>
+import FixedHeader from '@/components/fixed-header'
+
+export default {
+  components: { FixedHeader }
+}
+</script>
+
 
 <style>
 html {
