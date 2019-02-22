@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       links: [
-        { name: 'News', href: '/news' },
+        { name: 'Links', href: '/links' },
         { name: 'Work', href: '/work' },
         { name: 'About', href: '/about' }
       ]
