@@ -2,7 +2,7 @@
   <section class="container mx-auto">
     <ul class="flex flex-col items-center justify-center list-reset">
       <li v-for="w in projects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
-        <a :href="w.href" target="_blank">
+        <a :href="w.href" target="_blank" class="link">
           {{ w.name }} <span v-if="w.tag">{{ w.tag }}</span>
         </a>
       </li>

@@ -2,17 +2,10 @@
 @import 'variables';
 @import 'inter';
 @import 'scrollbar';
+@import 'ui';
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: $black;
   color: white;
-
-  a {
-    color: white;
-
-    &:hover {
-      color: $yellow;
-    }
-  }
 }

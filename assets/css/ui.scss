@@ -1,0 +1,10 @@
+.link {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  &:hover {
+    color: $yellow;
+    background-color: rgba(0, 0, 0, .2);
+  }
+}

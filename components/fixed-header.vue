@@ -1,10 +1,10 @@
 <template>
   <div class="sticky pin-t bg-black flex justify-between items-center px-5 py-5 w-full z-10">
-    <router-link class="hand no-underline" to="/" />
+    <router-link class="link hand no-underline" to="/" />
     <h1 v-if="$route.name !== 'index'" class="capitalize text-2xl">
       {{ $route.name }}
     </h1>
-    <a class="github-link" href="https://github.com/dmiotti" target="_blank">
+    <a class="link github-link" href="https://github.com/dmiotti" target="_blank">
       <img width="35" src="/GitHub-Mark-Light-120px-plus.png" alt="My GitHub profile">
     </a>
   </div>
