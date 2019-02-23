@@ -9,7 +9,7 @@
     </section>
 
     <footer class="absolute pin-b pin-l pin-r flex justify-center py-5 z-10 flex items-center">
-      <a href="mailto:david.miotti@gmail.com" class="link no-underline font-black text-xl">Contact 📡</a>
+      <a href="mailto:david.miotti@protonmail.com" class="link no-underline font-black text-xl">Contact 📡</a>
     </footer>
   </div>
 </template>
