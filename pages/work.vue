@@ -10,9 +10,16 @@
 
     <ul class="flex items-center justify-center list-reset flex-wrap py-5">
       <li v-for="app in iOSApps" :key="app.name" class="px-2 py-2">
-        <a :href="app.href" target="_blank">
-          <img :src="app.image" :alt="app.name" width="80" class="rounded-lg">
+        <a v-if="app.href !== '#'" :href="app.href" target="_blank">
+          <img :title="app.name" :src="app.image" :alt="app.name" width="80" class="rounded-lg">
         </a>
+        <img
+          v-else
+          :src="app.image"
+          title="Not available anymore"
+          :alt="app.name"
+          width="80"
+          class="opacity-50 rounded-lg">
       </li>
     </ul>
   </section>
@@ -23,23 +30,19 @@ export default {
   data() {
     return {
       projects: [
+        { href: 'https://cactomain.co', name: 'Cactomain' },
+        { href: 'https://muxumuxu.com', name: 'Muxu.Muxu' },
         { href: 'https://spendesk.com', name: 'Spendesk' },
-        { href: 'https://help.payfit.com', name: 'PayFit Help Center' },
-        {
-          href: 'https://twist.com/compare_slack',
-          name: 'Twist Compare to Slack'
-        },
-        { href: 'https://twist.com/pricing', name: 'Twist Pricing' },
+        { href: 'https://getluko.com', name: 'Luko' },
         { href: 'https://todoist.com/templates', name: 'Todoist Templates' },
+        { href: 'https://help.payfit.com', name: 'PayFit Help Center' },
         { href: 'https://payfit.com', name: 'PayFit' },
         { href: 'https://bureaunuits.com', name: 'Bureau Nuits' },
-        { href: 'https://getluko.com', name: 'Luko' },
         { href: 'https://bidmotion.com', name: 'Bidmotion' },
         { href: 'https://cfoconnect.eu', name: 'CFO Connect' },
         {
           href: 'https://github.com/muxumuxu/hyper-link',
-          name: 'HyperLink',
-          tag: 'Open Source'
+          name: 'HyperLink (Open Source)'
         },
         {
           href: 'https://todoist.com/review/2018/you',
@@ -48,10 +51,8 @@ export default {
         { href: 'https://walnut.ai', name: 'Walnut' },
         { href: 'https://sublime.xyz', name: 'Sublime' },
         { href: 'https://miraex.com', name: 'Miraex' },
-        { href: 'https://cactomain.co', name: 'Cactomain' },
         { href: 'https://sodif-fleurs.com', name: 'SODIF Fleurs' },
-        { href: 'https://supporterlart.com', name: "Supporter L'Art" },
-        { href: 'https://muxumuxu.com', name: 'Muxu.Muxu' }
+        { href: 'https://supporterlart.com', name: "Supporter L'Art" }
       ],
       iOSApps: [
         {
@@ -61,16 +62,16 @@ export default {
             'https://itunes.apple.com/fr/app/helloasso-admin/id1384487970?mt=8'
         },
         {
+          name: 'Mindful Attitude',
+          image: '/ios/mindful.png',
+          href:
+            'https://itunes.apple.com/fr/app/mindful-attitude-la-m%C3%A9ditation-des-entrepreneurs/id1184905321?mt=8&l=en'
+        },
+        {
           name: 'GRP',
           image: '/ios/grp.png',
           href:
             'https://itunes.apple.com/fr/app/grp-storyteller/id886223427?mt=8&l=en'
-        },
-        {
-          name: 'Ura Camera Viewer',
-          image: '/ios/ura.png',
-          href:
-            'https://itunes.apple.com/fr/app/ura-camera-viewer/id604813662?mt=8&l=en'
         },
         {
           name: 'Legrand Pro',
@@ -85,10 +86,16 @@ export default {
             'https://itunes.apple.com/fr/app/catalogue-legrand-grand-public/id1220876174?mt=8&l=en'
         },
         {
-          name: 'MyMegaselfie',
-          image: '/ios/megaselfie.png',
+          name: 'Sickle-O-Scope',
+          image: '/ios/sickle-o-scope.png',
           href:
-            'https://itunes.apple.com/fr/app/mymegaselfie/id1218197721?mt=8&l=en'
+            'https://itunes.apple.com/us/app/sickle-o-scope/id978278725?mt=8&l=en'
+        },
+        {
+          name: 'OenoSolutions',
+          image: '/ios/oenosolutions.png',
+          href:
+            'https://itunes.apple.com/us/app/oenosolutions/id1211158481&mt=8&l=en'
         },
         {
           name: 'Worldmix',
@@ -103,39 +110,15 @@ export default {
             'https://itunes.apple.com/fr/app/dependn-meilleure-app-pour-arreter-fumer-tabac-et-cannabis/id1093903062?mt=8&l=en'
         },
         {
-          name: 'Cocotte',
-          image: '/ios/cocotte.png',
-          href:
-            'https://itunes.apple.com/fr/app/coach-nourriture-enceinte-alimentation-grossesse/id1148406816?mt=8&l=en'
-        },
-        {
-          name: 'Koala',
-          image: '/ios/koala.png',
-          href:
-            'https://itunes.apple.com/us/app/koala-to-sleep-better-and-faster/id1224807364?l=en'
-        },
-        {
-          name: 'Sickle-O-Scope',
-          image: '/ios/sickle-o-scope.png',
-          href:
-            'https://itunes.apple.com/us/app/sickle-o-scope/id978278725?mt=8&l=en'
-        },
-        {
-          name: 'Mindful Attitude',
-          image: '/ios/mindful.png',
-          href:
-            'https://itunes.apple.com/fr/app/mindful-attitude-la-m%C3%A9ditation-des-entrepreneurs/id1184905321?mt=8&l=en'
-        },
-        {
           name: 'Kelmed',
           image: '/ios/kelmed.png',
           href: 'https://itunes.apple.com/fr/app/kelmed/id356406940?mt=8&l=en'
         },
         {
-          name: 'Simply Market',
-          image: '/ios/simply-market.png',
+          name: 'MyMegaselfie',
+          image: '/ios/megaselfie.png',
           href:
-            'https://itunes.apple.com/fr/app/simply-market-supermarch%C3%A9-plus-proche-de-vous/id684892652?mt=8&l=en'
+            'https://itunes.apple.com/fr/app/mymegaselfie/id1218197721?mt=8&l=en'
         },
         {
           name: 'Tellmewhere',
@@ -144,34 +127,46 @@ export default {
             'https://itunes.apple.com/fr/app/dismoio%C3%B9-restaurants-h%C3%B4tels-bars/id298056991?mt=8&l=en'
         },
         {
+          name: 'Ura Camera Viewer',
+          image: '/ios/ura.png',
+          href:
+            'https://itunes.apple.com/fr/app/ura-camera-viewer/id604813662?mt=8&l=en'
+        },
+        {
           name: 'TRACE Radio',
           image: '/ios/trace-radio.png',
           href:
             'https://itunes.apple.com/fr/app/trace-radio-radios-fm-afro-urbaines/id1179170021?mt=8&l=en'
         },
         {
+          name: 'Cocotte',
+          image: '/ios/cocotte.png',
+          href: '#'
+        },
+        {
+          name: 'Koala',
+          image: '/ios/koala.png',
+          href: '#'
+        },
+        {
+          name: 'Simply Market',
+          image: '/ios/simply-market.png',
+          href: '#'
+        },
+        {
           name: 'Kizym',
           image: '/ios/kizym.png',
-          href:
-            'https://itunes.apple.com/fr/app/kizym-concerts-en-france-ce-soir-pop-rap/id1105394462?mt=8&l=en'
+          href: '#'
         },
         {
           name: 'Hedwig',
           image: '/ios/hedwig.png',
-          href:
-            'https://itunes.apple.com/us/app/schedule-texts-with-hedwig/id1193055246?mt=8&l=en'
-        },
-        {
-          name: 'OenoSolutions',
-          image: '/ios/oenosolutions.png',
-          href:
-            'https://itunes.apple.com/us/app/oenosolutions/id1211158481&mt=8&l=en'
+          href: '#'
         },
         {
           name: 'Woupee',
           image: '/ios/woupee.png',
-          href:
-            'https://itunes.apple.com/fr/app/woupee-shopping-promos-et-bonnes-adresses/id1181916300?mt=8&l=en'
+          href: '#'
         }
       ]
     }
