@@ -20,7 +20,7 @@ export default {
     return {
       links: [
         { name: 'Links', href: '/links' },
-        { name: 'Work', href: '/work' },
+        { name: 'Projects', href: '/projects' },
         { name: 'About', href: '/about' }
       ]
     }
