@@ -1,13 +1,5 @@
 <template>
   <section class="container mx-auto">
-    <ul class="flex flex-col items-center justify-center list-reset">
-      <li v-for="w in projects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
-        <a :href="w.href" target="_blank" class="link">
-          {{ w.name }} <span v-if="w.tag">{{ w.tag }}</span>
-        </a>
-      </li>
-    </ul>
-
     <ul class="flex items-center justify-center list-reset flex-wrap py-5">
       <li v-for="app in iOSApps" :key="app.name" class="px-2 py-2">
         <a v-if="app.href !== '#'" :href="app.href" target="_blank">
@@ -20,6 +12,13 @@
           :alt="app.name"
           width="80"
           class="opacity-50 rounded-lg">
+      </li>
+    </ul>
+    <ul class="flex flex-col items-center justify-center list-reset">
+      <li v-for="w in projects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
+        <a :href="w.href" target="_blank" class="link">
+          {{ w.name }} <span v-if="w.tag">{{ w.tag }}</span>
+        </a>
       </li>
     </ul>
   </section>
@@ -60,6 +59,12 @@ export default {
           image: '/ios/hello-asso.jpg',
           href:
             'https://itunes.apple.com/fr/app/helloasso-admin/id1384487970?mt=8'
+        },
+        {
+          name: 'TRACE Radio',
+          image: '/ios/trace-radio.png',
+          href:
+            'https://itunes.apple.com/fr/app/trace-radio-radios-fm-afro-urbaines/id1179170021?mt=8&l=en'
         },
         {
           name: 'Mindful Attitude',
@@ -131,12 +136,6 @@ export default {
           image: '/ios/ura.png',
           href:
             'https://itunes.apple.com/fr/app/ura-camera-viewer/id604813662?mt=8&l=en'
-        },
-        {
-          name: 'TRACE Radio',
-          image: '/ios/trace-radio.png',
-          href:
-            'https://itunes.apple.com/fr/app/trace-radio-radios-fm-afro-urbaines/id1179170021?mt=8&l=en'
         },
         {
           name: 'Cocotte',
