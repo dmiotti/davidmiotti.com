@@ -11,7 +11,8 @@
           title="Not available anymore"
           :alt="app.name"
           width="80"
-          class="opacity-50 rounded-lg">
+          class="opacity-50 rounded-lg"
+        >
       </li>
     </ul>
     <ul class="flex flex-col items-center justify-center list-reset">

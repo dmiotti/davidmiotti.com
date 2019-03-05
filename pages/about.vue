@@ -1,16 +1,24 @@
 <template>
   <section>
     <section class="container mx-auto bio">
-      <p>Hi, I'm David, a regular 1x developer. I passoniated by web and iOS development. I worked for great companies like
+      <p>
+        Hi, I'm David, a regular 1x developer. I passoniated by web and iOS development. I worked for great companies like
         <a class="small-link" href="https://spendesk.com">Spendesk</a>,
         <a class="small-link" href="https://payfit.com">PayFit</a>,
         <a class="small-link" href="https://todooist.com">Todoist</a>,
         <a class="small-link" href="https://twist.com">Twist</a>,
         <a class="small-link" href="https://getluko.com">Luko</a>,
-        <a class="small-link" href="https://helloasso.com">HelloAsso</a> and more.
+        <a class="small-link" href="https://helloasso.com">HelloAsso</a>
+        and more.
       </p>
 
-      <p>You can find public stuff I have crafted in the <router-link class="small-link" to="projects">projects</router-link> section.</p>
+      <p>
+        You can find public stuff I have crafted in the
+        <router-link class="small-link" to="projects">
+          projects
+        </router-link>
+        section.
+      </p>
 
       <p>
         I love computer technologies and reading articles how to improve myself as a developer.
@@ -27,7 +35,9 @@
         I also made few projects on my own I will be happy to discuss. 2 are alive but only one is totally public. You can find it there <a class="small-link no-underline" href="https://cactomain.co" target="_blank">Cactomain</a>.
       </p>
 
-      <h2 class="text-2xl mb-6">Professional career</h2>
+      <h2 class="text-2xl mb-6">
+        Professional career
+      </h2>
 
       <ul class="list-reset">
         <li v-for="job in jobs" :key="job.company" class="text-xl mb-3">
@@ -47,11 +57,15 @@
         </li>
       </ul>
 
-      <p>If you want to know more about me, don't hesitate to <a href="mailto:david.miotti@protonmail.com" class="small-link">contact me</a>.</p>
+      <p>
+        If you want to know more about me, don't hesitate to <a href="mailto:david.miotti@protonmail.com" class="small-link">contact me</a>.
+      </p>
     </section>
 
     <img src="/cover.jpg" alt="">
-    <p class="text-base italic">*Me doing a Swift formation.</p>
+    <p class="text-base italic">
+      *Me doing a Swift formation.
+    </p>
   </section>
 </template>
 
