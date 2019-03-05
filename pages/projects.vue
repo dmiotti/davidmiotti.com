@@ -1,6 +1,7 @@
 <template>
   <section class="container mx-auto">
-    <ul class="flex items-center justify-center list-reset flex-wrap py-5">
+    <h2>iOS apps:</h2>
+    <ul class="flex list-reset flex-wrap py-5">
       <li v-for="app in iOSApps" :key="app.name" class="px-2 py-2">
         <a v-if="app.href !== '#'" :href="app.href" target="_blank">
           <img :title="app.name" :src="app.image" :alt="app.name" width="80" class="rounded-lg">
@@ -15,8 +16,19 @@
         >
       </li>
     </ul>
-    <ul class="flex flex-col items-center justify-center list-reset">
+
+    <h2>Web apps:</h2>
+    <ul class="flex flex-col list-reset">
       <li v-for="w in projects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
+        <a :href="w.href" target="_blank" class="link">
+          {{ w.name }} <span v-if="w.tag">{{ w.tag }}</span>
+        </a>
+      </li>
+    </ul>
+
+    <h2>Side projects:</h2>
+    <ul class="flex flex-col list-reset mb-6">
+      <li v-for="w in sideProjects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
         <a :href="w.href" target="_blank" class="link">
           {{ w.name }} <span v-if="w.tag">{{ w.tag }}</span>
         </a>
@@ -30,7 +42,6 @@ export default {
   data() {
     return {
       projects: [
-        { href: 'https://cactomain.co', name: 'Cactomain' },
         { href: 'https://muxumuxu.com', name: 'Muxu.Muxu' },
         { href: 'https://spendesk.com', name: 'Spendesk' },
         { href: 'https://getluko.com', name: 'Luko' },
@@ -41,10 +52,6 @@ export default {
         { href: 'https://bidmotion.com', name: 'Bidmotion' },
         { href: 'https://cfoconnect.eu', name: 'CFO Connect' },
         {
-          href: 'https://github.com/muxumuxu/hyper-link',
-          name: 'HyperLink (Open Source)'
-        },
-        {
           href: 'https://todoist.com/review/2018/you',
           name: 'Todoist Year in Review 2018'
         },
@@ -53,6 +60,13 @@ export default {
         { href: 'https://miraex.com', name: 'Miraex' },
         { href: 'https://sodif-fleurs.com', name: 'SODIF Fleurs' },
         { href: 'https://supporterlart.com', name: "Supporter L'Art" }
+      ],
+      sideProjects: [
+        { href: 'https://cactomain.co', name: 'Cactomain' },
+        {
+          href: 'https://github.com/muxumuxu/hyper-link',
+          name: 'HyperLink (Open Source)'
+        }
       ],
       iOSApps: [
         {
@@ -173,3 +187,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+h2 {
+  padding: 40px 0.5rem 20px;
+}
+</style>

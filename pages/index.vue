@@ -19,9 +19,9 @@ export default {
   data() {
     return {
       links: [
-        { name: 'Links', href: '/links' },
+        { name: 'About', href: '/about' },
         { name: 'Projects', href: '/projects' },
-        { name: 'About', href: '/about' }
+        { name: 'Tech', href: '/tech' }
       ]
     }
   }
