@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto">
+  <section class="wrapper mx-auto">
     <ul class="flex flex-col items-center justify-center list-reset">
       <li v-for="n in news" :key="n.name" class="font-black text-xl md:text-5xl my-1">
         <a class="link" :href="n.href" target="_blank">{{ n.name }}</a>

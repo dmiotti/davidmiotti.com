@@ -1,7 +1,7 @@
 <template>
-  <section class="container mx-auto">
-    <h2>iOS apps:</h2>
-    <ul class="flex list-reset flex-wrap py-5">
+  <section class="wrapper mx-auto">
+    <h2>iOS apps</h2>
+    <ul class="flex list-reset flex-wrap">
       <li v-for="app in iOSApps" :key="app.name" class="px-2 py-2">
         <a v-if="app.href !== '#'" :href="app.href" target="_blank">
           <img :title="app.name" :src="app.image" :alt="app.name" width="80" class="rounded-lg">
@@ -17,7 +17,7 @@
       </li>
     </ul>
 
-    <h2>Web apps:</h2>
+    <h2>Web apps</h2>
     <ul class="flex flex-col list-reset">
       <li v-for="w in projects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
         <a :href="w.href" target="_blank" class="link">
@@ -26,7 +26,7 @@
       </li>
     </ul>
 
-    <h2>Side projects:</h2>
+    <h2>Side projects</h2>
     <ul class="flex flex-col list-reset mb-6">
       <li v-for="w in sideProjects" :key="w.name" class="font-black text-xl md:text-5xl my-1">
         <a :href="w.href" target="_blank" class="link">
@@ -191,6 +191,15 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  padding: 40px 0.5rem 20px;
+  color: rgb(255, 205, 66);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+}
+h2:not(:first-child) {
+  padding: 60px 0.5rem 20px;
+}
+h2:first-child {
+  padding: 0 0.5rem 20px;
 }
 </style>
