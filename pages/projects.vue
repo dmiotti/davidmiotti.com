@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       projects: [
-        { href: 'https://muxumuxu.com', name: 'Muxu.Muxu' },
+        { href: 'https://aircall.io/', name: 'Aircall' },
         { href: 'https://spendesk.com', name: 'Spendesk' },
         { href: 'https://getluko.com', name: 'Luko' },
         { href: 'https://todoist.com/templates', name: 'Todoist Templates' },
@@ -59,7 +59,8 @@ export default {
         { href: 'https://sublime.xyz', name: 'Sublime' },
         { href: 'https://miraex.com', name: 'Miraex' },
         { href: 'https://sodif-fleurs.com', name: 'SODIF Fleurs' },
-        { href: 'https://supporterlart.com', name: "Supporter L'Art" }
+        { href: 'https://supporterlart.com', name: "Supporter L'Art" },
+        { href: 'https://muxumuxu.com', name: 'Muxu.Muxu' }
       ],
       sideProjects: [
         { href: 'https://cactomain.co', name: 'Cactomain' },
