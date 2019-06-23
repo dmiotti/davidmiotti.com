@@ -13,6 +13,7 @@ export default {
   data() {
     return {
       news: [
+        { href: 'https://dev.to/', name: 'DEV.to' },
         { href: 'https://news.ycombinator.com', name: 'Hacker News' },
         { href: 'https://github.com/trending', name: 'GitHub Trending' },
         { href: 'https://www.techmeme.com', name: 'Techmeme' },
