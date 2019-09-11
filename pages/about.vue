@@ -6,7 +6,7 @@
       <a class="small-link" href="https://payfit.com">PayFit</a>,
       <a class="small-link" href="https://todooist.com">Todoist</a>,
       <a class="small-link" href="https://twist.com">Twist</a>,
-      <a class="small-link" href="https://getluko.com">Luko</a>,
+      <a class="small-link" href="https://luko.eu">Luko</a>,
       <a class="small-link" href="https://helloasso.com">HelloAsso</a>,
       <a class="small-link" href="https://fr.trace.tv/">Trace TV</a>
       to name a few.

@@ -44,7 +44,7 @@ export default {
       projects: [
         { href: 'https://aircall.io/', name: 'Aircall' },
         { href: 'https://spendesk.com', name: 'Spendesk' },
-        { href: 'https://getluko.com', name: 'Luko' },
+        { href: 'https://luko.eu', name: 'Luko' },
         { href: 'https://todoist.com/templates', name: 'Todoist Templates' },
         { href: 'https://help.payfit.com', name: 'PayFit Help Center' },
         { href: 'https://payfit.com', name: 'PayFit' },
