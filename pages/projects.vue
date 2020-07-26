@@ -42,7 +42,17 @@ export default {
   data() {
     return {
       projects: [
-        { href: 'https://twist.com/remote-work-guides', name: 'Twist Remote Work Guides' },
+        { href: 'https://doist.github.io/marketist', name: 'Marketist' },
+        { href: 'https://todoist.com', name: 'Todoist' },
+        {
+          href: 'https://todoist.com/productivity-methods',
+          name: 'Productivity Methods'
+        },
+        { href: 'https://twist.com', name: 'Twist' },
+        {
+          href: 'https://twist.com/remote-work-guides',
+          name: 'Twist Remote Work Guides'
+        },
         { href: 'https://aircall.io/', name: 'Aircall' },
         { href: 'https://spendesk.com', name: 'Spendesk' },
         { href: 'https://luko.eu', name: 'Luko' },
